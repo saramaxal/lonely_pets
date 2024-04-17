@@ -1,0 +1,29 @@
+.header{
+    height: 80px;
+    border-bottom: 2px solid #444444; 
+    /* padding: 25px;  */
+}
+.header__content{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header__logo{
+    font-weight: 700;
+}
+.header__location{
+    font-weight: 500;
+    justify-self: end;
+}
+.header__menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    
+}
+.header__menu__item{
+    font-weight: 500;
+    justify-self: end;
+}
+.header__menu__item:first-child{
+    margin-right: 59px; 
+}

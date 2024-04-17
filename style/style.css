@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    /* outline: solid red; */
+}
+
+body {
+    font-size: 24px;
+    font-family: Lora;
+    font-weight: 500;
+    background-color: #FFFFFE;
+    color: #363636;
+}
+
+a {
+    color: #363636;
+    text-decoration: none;
+}
+
+button {
+    padding: 0px;
+    border: none;
+}
+
+.content {
+    --width: 1180px;
+    --padding: 30px;
+    margin: auto;
+    max-width: calc(var(--width) + var(--padding) * 2);
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+
+}
+
+/* .hidden{
+    overflow: hidden;
+    height: 0px;
+} */
+
+p {
+    margin: 0px;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.not-scroll {
+    overflow-y: hidden;
+}
+
+.wrap-page {
+    margin: auto;
+    width: max-content;
+}
+
+.wrap-radio-button {
+    height: 20px;
+}
+
+.wrap-radio-button input[type=radio] {
+    display: none;
+}
+
+.wrap-radio-button label {
+    position: relative;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+
+.wrap-radio-button label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #363636;
+    box-sizing: inherit;
+}
+
+.wrap-radio-button input[type=radio]:checked+label::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 2px;
+    background-color: #363636;
+    box-sizing: inherit;
+}
+
+/* .radio-button {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    box-sizing: border-box;
+} */
+
+
+
+/* .radio-button::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    background-color: #363636;
+    box-sizing: inherit;
+}
+
+.radio-button::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #363636;
+    box-sizing: inherit;
+
+} */
+
+
+
+
+.animal-card {
+    width: 280px;
+    height: auto;
+    border: 2px solid #363636;
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    /* margin-bottom: 20px; */
+}
+
+.address {
+    width: 212px;
+    height: 12px;
+    background-color: #363636;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* font-size: 18px;  */
+    /* text-align: center;  */
+    margin-left: 34px;
+    margin-bottom: 8px;
+    /* font-family: Lora;  */
+
+    /* text-transform: lowercase; 
+    padding: 8px 43px 13px 43px; 
+    color: #FFFFFE; */
+}
+
+.description {
+    width: 264px;
+    height: 69px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: Lora;
+    font-weight: 400;
+}
+
+/* .img{
+    width: 264px; 
+    height: 171px; 
+    border-radius: 6px;
+} */

@@ -1,0 +1,52 @@
+.hero {
+    background-color: #363636;
+    color: #FFFFFE;
+}
+.hero__content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero img{
+    width: 244px; 
+    height: 170px; 
+    border-radius: 6px; 
+    margin-right: 56px;
+}
+.hero__description{
+    width: 564px; 
+    height: 136px; 
+    font-family: Lora;
+    display: inline-grid;
+    vertical-align: top;
+    grid-template-columns: 264px 264px;
+    grid-template-areas:
+    "hero__p1 hero__p1"
+    "hero__p2 hero__p3";
+    column-gap: 36px;
+}
+.hero__title{
+    font-weight: 700; 
+    grid-area: hero__p1;
+}
+.hero__item{
+    display: inline-block; 
+    width: 264px; 
+}
+.hero__item:first-child{
+    grid-area: hero__p2;
+
+}
+.hero__item:last-child{
+    grid-area: hero__p3;
+
+}
+
+/* .hero__item{
+    display: inline-block; 
+    font-weight: 500; 
+    width: 264px; 
+    height: 94px; 
+    margin: 0px; 
+    grid-area: hero__p3;
+} */

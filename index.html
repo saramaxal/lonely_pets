@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lonely-pets</title>
+	<link rel="stylesheet" href="./normalize/normalize.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/header.css">
+	<link rel="stylesheet" href="./style/hero.css">
+	<link rel="stylesheet" href="./style/main.css">
+	<link rel="stylesheet" href="./style/form.css">
+	<link rel="stylesheet" href="./style/card.css">
+	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/modal.css">
+	<script defer src="./script/script.js"></script>
+	<script src="./script/del.js"></script>
+</head>
+
+<body>
+	<!-- <div class="page" style=" height: 1866px; background-color: #FFFFFE; margin: auto;"> -->
+	<header class="header">
+		<div class="content header__content">
+			<nav class="header__menu">
+				<span class="logo header__logo">
+					ОДИНОКИЙ ПЕТ
+				</span>
+				<span class="header__location">
+					п.г.т. Тымосвкое
+				</span>
+				<a href="./create.html" class="header__menu__item">оставить объявление</a>
+				<a href="./removal.html" class="header__menu__item">удалить объявление</a>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="hero">
+			<div class="content hero__content">
+				<img src="./img/hero__photo.png">
+				<div class="hero__description">
+					<p class="hero__title">Спасибо, что зашли! Вы можете:</p>
+					<p class="hero__item"> оставить объявление о питомце, которому нужен дом</p>
+					<p class="hero__item"> удалить объявление, после того, как нашли друга</p>
+				</div>
+			</div>
+		</div>
+		<div class="content main__content">
+			<form class="form">
+				<div class="filters">
+					<p class="filters__title ">Фильтры</p>
+					<!-- <div class="wrap-filters"> -->
+					<div class="type">
+						<label for="view">вид</label>
+						<select name="view">
+							<option disabled="disabled" selected="selected">вид</option>
+							<option>кошка</option>
+							<option>собака</option>
+							<option>грызун</option>
+							<option>другое</option>
+						</select>
+					</div>
+					<div class="sizing">
+						<label for="size">размер</label>
+						<select name="size">
+							<option disabled="disabled" selected="selected">размер</option>
+							<option>мелкий</option>
+							<option>средний</option>
+							<option>крупный</option>
+						</select>
+					</div>
+					<div class="gender">
+						<label for="language">пол</label>
+						<div class="man gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="man" name="language">
+							<label for="man">м</label>
+						</div>
+						<div class="woman gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="woman" name="language">
+							<label for="woman">ж</label>
+						</div>
+					</div>
+					<div class="button-basic hidden">
+						<button class="off">сбросить</button>
+						<button>поиск</button>
+					</div>
+					<!-- </div> -->
+				</div>
+
+
+			</form>
+			<p class="postscript">Если вы обрели друга, пожалуйста, нажмите <span>удалить объявление,</span> чтобы
+				другие не искали того, у кого уже есть дом</p>
+
+			<div class="animals-cards">
+
+			</div>
+
+		</div>
+
+	</main>
+	<footer class="footer">
+		<div class="footer__content content">
+			<p class="footer__thank">Спасибо, что посетили сайт!</p>
+			<p class="footer__email">Почта: dasha@gmail.com</p>
+			<p class="footer__project">Выполнен в качестве итогового школьного проекта в 10 классе.</p>
+		</div>
+	</footer>
+	<div class="modal modal-hidden">
+		<div class="modal__content">
+			<div class="modal__wrap-modal">
+				<header class="header-modal">
+					<nav class="header-modal__content">
+						<span class="type-animal">
+							Собака
+						</span>
+						<div class="header-number-add-modal">
+							<span class="add-modal">
+								№ объявления
+							</span>
+							<span class="number-add-modal">
+								355667
+							</span>
+						</div>
+						<div class="cross">
+							<img src="./img/Group 30.png">
+						</div>
+					</nav>
+				</header>
+				<div class="intelligence">
+					<div class="photo-animal-modal">
+						<img src="./img/Rectangle 280.png">
+					</div>
+					<div class="information-modal">
+						<p class="old-modal criteria">возраст</p>
+						<p class="old-modal-data criteria">7 месяцев</p>
+						<p class="gender-modal criteria">пол</p>
+						<p class="gender-modal-data criteria">женский</p>
+						<p class="size-modal criteria">размер</p>
+						<p class="size-modal-data criteria">маленький</p>
+						<p class="time-modal criteria">размещено</p>
+						<p class="time-modal-data criteria">25.06.2023 12:09</p>
+						<p class="contacts-modal criteria">контакты</p>
+						<p class="contacts-modal-data criteria">saramaxal@gmail.com</p>
+						<p class="address-modal criteria">адрес</p>
+						<p class="address-modal-data criteria">пр Большевиков. ул Коллонтай 21 к1</p>
+					</div>
+				</div>
+				<p class="description-modal">милое коротколапое создание. хозяева уезжают, забрать не могут. заберите,
+					пожалуйста. к лотку приучена. девочка. отдадим только в хорошие руки, которые очень любят собак и
+					знают, как о них заботиться!!! не очень активный. девочка. отдадим только в хорошие руки, которые
+					очень любят собак и знают, как о них заботиться!!! не очень активный.девочка. отдадим только в
+					хорошие руки, которые очень любят собак и знают, как о них заботиться!!! не очень активный.</p>
+			</div>
+		</div>
+	</div>
+	<!-- </div> -->
+</body>
+
+</html>
