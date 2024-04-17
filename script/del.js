@@ -62,19 +62,17 @@ let queries = [{
 
 
 async function pushVals() {
-    for (const val in queries) {
+    for (const val of queries) {
         console.log(val);
         const urlWithParams = new URL("https://ash-swamp-polka.glitch.me/posts/push");
-        for (const key in val) {
-            urlWithParams.searchParams.set(key, String(val[key]));
+        for (const [key, value] of Object.entries(val)) {
+            urlWithParams.searchParams.set(key, value);
         }
-        response = await fetch(
-            urlWithParams.toString(),
-            // {
-            //     method: "GET"
-            // }
-        );
-        console.log(response.json());
+        fetch(urlWithParams.toString(), {
+                method: "PUT"
+        })
+        .then(res => console.log(res.json()))
+        .catch(console.error);
     }
     // queries.forEach(val => {
     // });
