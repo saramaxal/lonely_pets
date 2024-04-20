@@ -1,8 +1,9 @@
-.form{
+.form {
     /* padding-bottom: 20px;   */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
-.filters{
+
+.filters {
     /* width: 704px; 
     height: 210px; 
     */
@@ -10,85 +11,93 @@
     grid-template-columns: repeat(2, 340px);
     column-gap: 24px;
     row-gap: 12px;
-    grid-template-areas: 
+    grid-template-areas:
         "title title"
         "type size"
         "gender button";
-    
+
 }
-.filters__title{
-    font-weight: 700; 
+
+.filters__title {
+    font-weight: 700;
     grid-area: title;
 }
-.type{
+
+.type {
     /* width: 340px;  */
     /* height: 77px;  */
     font-family: Ubuntu;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 12px;
     grid-area: type;
 }
-.type label{
-    display: inline-block; 
-    font-weight: 400; 
+
+.type label {
+    display: inline-block;
     font-size: 18px;
 }
-.type select{
-    width: 100%; 
-    height: 44px; 
-    padding: 11.5px 24px; 
-    font-weight: 400; 
-    font-size: 18px; 
-    border-radius: 4px; 
+
+.type select {
+    width: 100%;
+    height: 44px;
+    padding: 11.5px 24px;
+    font-size: 18px;
+    border-radius: 4px;
     border: 2px solid #363636;
 }
-.sizing{
-    height: 77px; 
-    font-family: Ubuntu; 
+
+.sizing {
+    height: 77px;
+    font-family: Ubuntu;
     grid-area: size;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    gap: 12px;  
+    gap: 12px;
 }
-.sizing label{
-    display: block;  
-    font-weight: 400; 
+
+.sizing label {
+    display: block;
     font-size: 18px;
 }
-.sizing select{
+
+.sizing select {
     /* width: 100%;  */
-    height: 44px; 
-    padding: 11.5px 24px; 
-    font-weight: 400; 
-    font-size: 18px; 
-    border-radius: 4px; 
+    height: 44px;
+    padding: 11.5px 24px;
+    font-size: 18px;
+    border-radius: 4px;
     border: 2px solid #363636;
 }
-.gender{
+
+.gender {
     display: grid;
     grid-area: gender;
     grid-template-columns: 44px 44px;
     column-gap: 12px;
     row-gap: 8px;
-    grid-template-areas: 
+    grid-template-areas:
         "pol pol"
         "man woman";
 }
-.gender label{
+
+.gender label {
     font-size: 18px;
     grid-area: pol;
 }
-.man{
+
+.man {
     font-size: 18px;
     grid-area: man;
     height: 20px;
 }
-.woman{
+
+.woman {
     font-size: 18px;
     grid-area: woman;
     height: 20px;
 }
+
 /* .animal{
     width: 91px; 
     height: 56px; 
@@ -102,8 +111,8 @@
     margin-bottom: 12px; 
     display: block;
 } */
-.button-basic{
-    font-family: Ubuntu; 
+.button-basic {
+    font-family: Ubuntu;
     font-size: 20px;
     grid-area: button;
     justify-self: end;
@@ -111,14 +120,16 @@
     gap: 24px;
     align-self: end;
 }
-.button-basic button{
-    width: 124px; 
-    height: 44px; 
-    cursor: pointer; 
-    background-color: #363636; 
+
+.button-basic button {
+    width: 124px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #363636;
     color: #C5C5C5;
     border-radius: 4px;
 }
+
 .button-basic button:hover {
     background-color: #C5C5C5;
     color: #363636;

@@ -1,170 +1,92 @@
 .modal {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0px;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__content {
-    padding-left: 60px;
-    padding-right: 60px;
-    display: flex;
-    height: 100%;
+	padding-left: 60px;
+	padding-right: 60px;
+	display: flex;
+	height: 100%;
 }
 
 .modal__wrap-modal {
-    background-color: #FFFFFE;
-    width: 100%;
-    max-width: 1106px;
-    margin: auto;
-    padding: 32px;
-    border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 100%;
+	max-width: 1106px;
+	margin: auto;
+	padding: 32px;
+	background-color: #FFFFFE;
+	border-radius: 6px;
 }
 
 .header-modal {
-    height: 41px;
-    border-bottom: 2px solid #505050;
-    margin-bottom: 37px;
-}
-
-.header-modal__content {
-    display: grid;
-    grid-template-columns: 425, 5px 576, 5px 40px;
-    grid-template-areas:
-        "type-animal header-number-add-modal cross";
+	display: flex;
+	border-bottom: 2px solid #505050;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .type-animal {
-    grid-area: type-animal;
-    font-size: 32px;
-    font-weight: 700;
+	font-size: 32px;
+	font-weight: 700;
 }
 
-.header-number-add-modal {
-    grid-area: header-number-add-modal;
-    display: grid;
-    column-gap: 12px;
-    grid-template-columns: 171px 79px;
-    grid-template-areas:
-        "add-modal number-add-modal";
+.information-modal__wrap-id .information-modal__header {
+	display: flex;
+	gap: 12px;
 }
 
-.add-modal {
-    grid-area: add-modal;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.number-add-modal {
-    grid-area: number-add-modal;
-    font-size: 24px;
-    font-weight: 700;
+.id-modal-data {
+	font-weight: 700;
 }
 
 .cross {
-    grid-area: cross;
-    justify-self: end;
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.intelligence {
-    margin-bottom: 32px;
-    display: grid;
-    column-gap: 24px;
-    grid-template-columns: 320px 698px;
-    grid-template-rows: 240px;
-    grid-template-areas:
-        "photo-animal-modal information-modal";
+.cross:hover svg rect {
+	fill: #363636;
+}
+
+.modal-main {
+	display: flex;
+	gap: 24px;
 }
 
 .photo-animal-modal {
-    grid-area: photo-animal-modal;
-    width: 320px;
-    height: 240px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: #363636;
+	min-width: 320px;
+	height: 240px;
+	border-radius: 6px;
+	background-color: #363636;
 }
 
 .photo-animal-modal img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
 }
 
 .information-modal {
-    height: 206px;
-    grid-area: information-modal;
-    display: grid;
-    column-gap: 8px;
-    row-gap: 4px;
-    grid-template-columns: 180px 510px;
-    /* grid-template-rows: 31px; */
-    grid-template-areas:
-        "old-modal old-modal-data"
-        "gender-modal gender-modal-data"
-        "size-modal size-modal-data"
-        "time-modal time-modal-data"
-        "contacts-modal contacts-modal-data"
-        "address-modal address-modal-data";
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
 }
 
-.criteria {
-    font-weight: 400;
-    font-size: 24px;
-    height: 31px;
+.information-modal__wrap-id {
+	display: flex;
+	gap: 12px;
 }
 
-.old-modal {
-    grid-area: old-modal;
+.information-modal>div:not(.hidden-for-screen-reader) {
+	display: flex;
 }
 
-.old-modal-data {
-    grid-area: old-modal-data;
-}
-
-.gender-modal {
-    grid-area: gender-modal;
-}
-
-.gender-modal-data {
-    grid-area: gender-modal-data;
-}
-
-.size-modal {
-    grid-area: size-modal;
-}
-
-.size-modal-data {
-    grid-area: size-modal-data;
-}
-
-.time-modal {
-    grid-area: time-modal;
-}
-
-.time-modal-data {
-    grid-area: time-modal-data;
-}
-
-.contacts-modal {
-    grid-area: contacts-modal;
-}
-
-.contacts-modal-data {
-    grid-area: contacts-modal-data;
-}
-
-.address-modal {
-    grid-area: address-modal;
-}
-
-.address-modal-data {
-    grid-area: address-modal-data;
-}
-
-.description-modal {
-    font-weight: 400;
-    font-size: 24px;
+.information-modal__header {
+	width: 180px;
 }

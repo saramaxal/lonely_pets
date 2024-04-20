@@ -69,10 +69,10 @@ async function pushVals() {
             urlWithParams.searchParams.set(key, value);
         }
         fetch(urlWithParams.toString(), {
-                method: "PUT"
+            method: "PUT"
         })
-        .then(res => console.log(res.json()))
-        .catch(console.error);
+            .then(res => console.log(res.json()))
+            .catch(console.error);
     }
     // queries.forEach(val => {
     // });

@@ -1,22 +1,24 @@
-.link-return{
+.link-return {
     margin-bottom: 28px;
-    font-size: 24px;
     font-weight: 500;
 }
-.delete-remove{
+
+.delete-remove {
     margin-bottom: 28px;
     width: 762px;
 }
-.delete{
+
+.delete {
     margin-bottom: 12px;
     font-size: 32px;
     font-weight: 600;
 }
-.ps-remove{
-    font-size: 24px;
+
+.ps-remove {
     font-weight: 500;
 }
-.form-removal{
+
+.form-removal {
     font-family: "Ubuntu";
     font-size: 20px;
     display: grid;
@@ -30,10 +32,12 @@
         "picture-animal"
         "button-removal";
 }
-.number-add{
+
+.number-add {
     grid-area: number-add;
 }
-.number-add input{
+
+.number-add input {
     width: 100%;
     height: 60px;
     border: 2px solid #363636;
@@ -42,10 +46,12 @@
     padding-right: 24px;
     margin-top: 12px;
 }
-.name-animal{
+
+.name-animal {
     grid-area: name-animal;
 }
-.name-animal input{
+
+.name-animal input {
     width: 100%;
     height: 60px;
     border: 2px solid #363636;
@@ -54,12 +60,14 @@
     padding-right: 24px;
     margin-top: 12px;
 }
-.description-removal{
+
+.description-removal {
     grid-area: description-removal;
 }
-.description-removal textarea{
+
+.description-removal textarea {
     resize: vertical;
-    width: 100%; 
+    width: 100%;
     height: 140px;
     border: 2px solid #363636;
     border-radius: 4px;
@@ -68,31 +76,36 @@
     padding-left: 24px;
     padding-right: 24px;
 }
-.picture-animal{
+
+.picture-animal {
     display: inline-block;
     grid-area: picture-animal;
 }
-.picture-animal p{
+
+.picture-animal p {
     border: 2px solid #363636;
-    width: 398px; 
+    width: 398px;
     height: 286px;
-    margin-top: 12px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;  
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 }
-.button-removal{
+
+.button-removal {
     grid-area: button-removal;
 }
-.button-removal button{ 
-    width: 216px; 
+
+.button-removal button {
+    width: 216px;
     height: 55px;
     border-radius: 4px;
-    background-color: #363636; 
+    background-color: #363636;
     color: #C5C5C5;
     cursor: pointer;
 }
+
 .button-removal button:hover {
     background-color: #C5C5C5;
     color: #363636;

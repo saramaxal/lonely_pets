@@ -14,8 +14,9 @@
 	<link rel="stylesheet" href="./style/card.css">
 	<link rel="stylesheet" href="./style/footer.css">
 	<link rel="stylesheet" href="./style/modal.css">
-	<script defer src="./script/script.js"></script>
-	<script src="./script/del.js"></script>
+	<script defer type="module" src="./script/script.js"></script>
+	<!-- <script defer src="./script/loadData.js"></script>
+	<script defer src="./script/modal.js"></script> -->
 </head>
 
 <body>
@@ -106,51 +107,65 @@
 			<p class="footer__project">Выполнен в качестве итогового школьного проекта в 10 классе.</p>
 		</div>
 	</footer>
-	<div class="modal modal-hidden">
+	<div class="modal hidden-for-screen-reader">
 		<div class="modal__content">
 			<div class="modal__wrap-modal">
 				<header class="header-modal">
-					<nav class="header-modal__content">
-						<span class="type-animal">
-							Собака
-						</span>
-						<div class="header-number-add-modal">
-							<span class="add-modal">
-								№ объявления
-							</span>
-							<span class="number-add-modal">
-								355667
-							</span>
-						</div>
-						<div class="cross">
-							<img src="./img/Group 30.png">
-						</div>
-					</nav>
+					<!-- <span class="type-animal">Собака</span>
+					<div class="information-modal__wrap-id">
+						<span class="information-modal__header">№ объявления</span>
+						<span class="information-modal__data id-modal-data">355667</span>
+					</div> -->
+					<!-- <div class="cross">
+						<img src="./img/Group 30.png">
+					</div> -->
 				</header>
+				<!--
 				<div class="intelligence">
 					<div class="photo-animal-modal">
 						<img src="./img/Rectangle 280.png">
 					</div>
 					<div class="information-modal">
-						<p class="old-modal criteria">возраст</p>
-						<p class="old-modal-data criteria">7 месяцев</p>
-						<p class="gender-modal criteria">пол</p>
-						<p class="gender-modal-data criteria">женский</p>
-						<p class="size-modal criteria">размер</p>
-						<p class="size-modal-data criteria">маленький</p>
-						<p class="time-modal criteria">размещено</p>
-						<p class="time-modal-data criteria">25.06.2023 12:09</p>
-						<p class="contacts-modal criteria">контакты</p>
-						<p class="contacts-modal-data criteria">saramaxal@gmail.com</p>
-						<p class="address-modal criteria">адрес</p>
-						<p class="address-modal-data criteria">пр Большевиков. ул Коллонтай 21 к1</p>
+
+						<div class="information-modal__wrap-age">
+							<p class="information-modal__header">возраст</p>
+							<p class="information-modal__data">7 месяцев</p>
+						</div>
+
+						<div class="information-modal__wrap-gender">
+							<p class="information-modal__header">пол</p>
+							<p class="information-modal__data">женский</p>
+						</div>
+
+						<div class="information-modal__wrap-size">
+							<p class="information-modal__header">размер</p>
+							<p class="information-modal__data">маленький</p>
+						</div>
+
+						<div class="information-modal__wrap-date">
+							<p class="information-modal__header">размещено</p>
+							<p class="information-modal__data">25.06.2023 12:09</p>
+						</div>
+
+						<div class="information-modal__wrap-contacts">
+							<p class="information-modal__header">контакты</p>
+							<p class="information-modal__data">saramaxal@gmail.com</p>
+						</div>
+
+						<div class="information-modal__wrap-address">
+							<p class="information-modal__header">адрес</p>
+							<p class="information-modal__data">пр Большевиков. ул Коллонтай 21 к1</p>
+						</div>
+
 					</div>
 				</div>
-				<p class="description-modal">милое коротколапое создание. хозяева уезжают, забрать не могут. заберите,
-					пожалуйста. к лотку приучена. девочка. отдадим только в хорошие руки, которые очень любят собак и
+				<p class="description-modal-data description-modal">
+					милое коротколапое создание. хозяева уезжают,
+					забрать не могут. заберите, пожалуйста. к лотку приучена. девочка. отдадим только в хорошие руки,
+					которые очень любят собак и
 					знают, как о них заботиться!!! не очень активный. девочка. отдадим только в хорошие руки, которые
 					очень любят собак и знают, как о них заботиться!!! не очень активный.девочка. отдадим только в
-					хорошие руки, которые очень любят собак и знают, как о них заботиться!!! не очень активный.</p>
+					хорошие руки, которые очень любят собак и знают, как о них заботиться!!! не очень активный.</p> -->
 			</div>
 		</div>
 	</div>

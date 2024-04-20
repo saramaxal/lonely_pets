@@ -1,28 +1,30 @@
-body{
+body {
     color: #363636;
 }
+
 /* .header-add{
     border-bottom: 2px solid #444444;
 } */
-.link-return{
+.link-return {
     margin-bottom: 28px;
-    font-size: 24px;
     font-weight: 500;
 }
-.registration-add{
+
+.registration-add {
     margin-bottom: 28px;
 }
-.registration{
+
+.registration {
     margin-bottom: 12px;
     font-size: 32px;
     font-weight: 600;
 }
-.ps{
-    font-size: 24px;
+
+.ps {
     font-weight: 500;
 }
 
-.form-filling{
+.form-filling {
     font-family: "Ubuntu";
     font-size: 20px;
     display: grid;
@@ -30,7 +32,7 @@ body{
     row-gap: 18px;
 
     grid-template-columns: 340px 396px;
-        grid-template-areas: 
+    grid-template-areas:
         "address-home address-home"
         "contacts contacts"
         "description-animal description-animal"
@@ -40,10 +42,12 @@ body{
         "gender-add photo"
         "button-send photo";
 }
-.address-home{
+
+.address-home {
     grid-area: address-home;
 }
-.address-home input{
+
+.address-home input {
     width: 762px;
     height: 60px;
     border: 2px solid #363636;
@@ -52,10 +56,12 @@ body{
     padding-left: 24px;
     padding-right: 24px;
 }
-.contacts{
+
+.contacts {
     grid-area: contacts;
 }
-.contacts input{
+
+.contacts input {
     width: 762px;
     height: 60px;
     border: 2px solid #363636;
@@ -64,13 +70,15 @@ body{
     padding-left: 24px;
     padding-right: 24px;
 }
-.description-animal{
+
+.description-animal {
     grid-area: description-animal;
 }
-.description-animal textarea{
+
+.description-animal textarea {
     width: 100%;
     margin-top: 12px;
-    resize: vertical; 
+    resize: vertical;
     height: 140px;
     border: 2px solid #363636;
     border-radius: 4px;
@@ -78,14 +86,17 @@ body{
     padding-left: 24px;
     padding-right: 24px;
 }
-.animals{
+
+.animals {
     grid-area: animals;
 }
-.animals label{
+
+.animals label {
     display: inline-block;
     margin-bottom: 12px;
 }
-.animals select{
+
+.animals select {
     width: 100%;
     height: 60px;
     border: 2px solid #363636;
@@ -93,28 +104,33 @@ body{
     color: #666252;
     padding-left: 24px;
 }
-.photo{
+
+.photo {
     display: inline-block;
     grid-area: photo;
 }
-.photo p{
+
+.photo p {
     border: 2px solid #363636;
-    width: 100%; 
+    width: 100%;
     height: 286px;
-    margin-top: 12px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;  
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 }
-.dimensions{
+
+.dimensions {
     grid-area: dimensions;
 }
-.dimensions label{
+
+.dimensions label {
     display: inline-block;
     margin-bottom: 12px;
 }
-.dimensions select{
+
+.dimensions select {
     width: 100%;
     height: 60px;
     border: 2px solid #363636;
@@ -122,10 +138,12 @@ body{
     color: #666252;
     padding-left: 24px;
 }
-.old{
-    grid-area: old; 
+
+.old {
+    grid-area: old;
 }
-.older-from{
+
+.older-from {
     width: 100%;
     height: 60px;
     margin-top: 12px;
@@ -133,37 +151,44 @@ body{
     border-radius: 4px;
     padding-left: 24px;
 }
-.gender-add{
+
+.gender-add {
     grid-area: gender-add;
     display: grid;
     grid-template-columns: 39px 40px;
     grid-template-rows: 23px 23px;
     column-gap: 12px;
     row-gap: 12px;
-    grid-template-areas: 
+    grid-template-areas:
         "pol-add pol-add"
         "man-add woman-add";
 }
-.gender-add label{
+
+.gender-add label {
     grid-area: pol-add;
 }
-.man-add{
+
+.man-add {
     grid-area: man-add;
 }
-.woman-add{
+
+.woman-add {
     grid-area: woman-add;
-} 
-.button-send{
+}
+
+.button-send {
     grid-area: button-send;
 }
-.button-send button{ 
-    width: 216px; 
+
+.button-send button {
+    width: 216px;
     height: 55px;
     border-radius: 4px;
-    background-color: #363636; 
+    background-color: #363636;
     color: #C5C5C5;
     cursor: pointer;
 }
+
 .button-send button:hover {
     background-color: #C5C5C5;
     color: #363636;

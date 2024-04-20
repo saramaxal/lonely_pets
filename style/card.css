@@ -1,17 +1,63 @@
-.animals-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+.animals-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
 }
-.animal-card__wrap-photo{
-    width: 264px; 
-    height: 171px; 
-    border-radius: 6px;
-    background-color: #363636;
+
+.animal-card {
+	width: 280px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+	padding-right: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border: 2px solid #363636;
+	border-radius: 6px;
+	cursor: pointer;
 }
-.img{
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;    ;
+
+.animal-card:hover {
+	border-color: #605E9B;
+	background-color: #F5F5F4;
+	/* outline: #4E876F; */
+}
+
+.animal-card:hover>div:first-child {
+	background-color: #605E9B;
+}
+
+/* первый уровень вложенности в animal-card элемент */
+.animal-card>div:first-child {
+	height: 16px;
+	padding-bottom: 4px;
+	margin-left: 26px;
+	margin-right: 26px;
+	background-color: #363636;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.animal-card__wrap-photo {
+	width: 264px;
+	height: 171px;
+	border-radius: 6px;
+	background-color: #363636;
+}
+
+.animal-card__photo {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.animal-card__description {
+	height: 69px;
+	font-size: 18px;
+	font-family: Lora;
+	/* убрала font-weight, чтобы вместо 400 взяло 500. с 400 выглядело плохо */
+	overflow-y: hidden;
+	/* костыльная штука, чтобы буквы не обрезались */
+	line-height: 1.25;
 }

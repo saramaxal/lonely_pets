@@ -1,14 +1,19 @@
-.main__content{
+.main {
+    margin-top: 80px;
+}
+
+.main__content {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.postscript{
-    font-size: 24px; 
-    font-weight: 500; 
-    margin-top: 0px; 
-    margin-bottom: 20px; 
+
+.postscript {
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-family: Lora;
 }
-.postscript span{
+
+.postscript span {
     font-weight: 700;
 }
