@@ -2,6 +2,8 @@ export const LoadData = loadData;
 
 const db_url = "https://ash-swamp-polka.glitch.me/posts"
 
+export const API_URL = db_url;
+
 function ecranize(str) {
 	if (str === null)
 		return "";

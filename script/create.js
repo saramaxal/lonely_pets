@@ -1,3 +1,5 @@
+import { API_URL } from "./loadData";
+
 // Работа с формой
 let smile_array = ['👾', '👽', '👻', '🤖', '🐸', '🐻‍❄️'];
 console.log(smile_array);
@@ -100,3 +102,31 @@ console.log("👻"[0] + "👽"[1]);
 // console.log(["👾"[0]]);
 // console.log(["🐸"[0]]);
 // console.log(["🐻‍❄️"[0]]);
+
+const form = document.getElementById("crate-form");
+
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    // const employerError = document.querySelector(".employer__error");
+    // if (!validate.isValid) return;
+
+    try {
+        const formData = new FormData(form);
+        // employerError.textContent = "ОТПРАВКА. ПОДОЖДИТЕ...";
+        const response = await fetch(`${API_URL}/push`, {
+            method: 'PUT',
+            body: formData
+        })
+
+        if (response.ok) {
+            // employerError.textContent = "";
+            // window.location.href = 'index.html';
+
+        }
+        alert(response.ok);
+    } catch (error) {
+        // employerError.textContent = "Не удалось отправить.";
+        console.error(error);
+    }
+
+})
