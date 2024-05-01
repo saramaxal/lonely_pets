@@ -1,21 +1,26 @@
 export const LoadData = loadData;
 
-const db_url = "https://ash-swamp-polka.glitch.me/posts"
+const db_url = "https://lonely-pets.glitch.me";
+// const db_url = "https://broadleaf-humorous-melon.glitch.me";
+
+//"https://ash-swamp-polka.glitch.me/posts"
 
 export const API_URL = db_url;
 
 function ecranize(str) {
-	if (str === null)
+	if (str === null || str === undefined)
 		return "";
 	return String(str).replaceAll('"', '\\"');
 }
 
 function recreateData(data) {
+	console.log(data);
 	let animalsCards = document.querySelector(".animals-cards");
 	const columns = [
 		"id",
 		"status",
 		"date",
+		"variety",
 		"age",
 		"image",
 		"gender",
@@ -43,7 +48,7 @@ function recreateData(data) {
 					${post.description}
 				</div>
 				<div class="animal-card__wrap-photo">
-					<img class="animal-card__photo" src="../img/cat and cold-blooded.jpg">
+					<img class="animal-card__photo" src="${db_url}/${post.image}">
 				</div>
 			</div>`;
 		}
@@ -52,7 +57,7 @@ function recreateData(data) {
 }
 
 function loadData(start, count) {
-	const url = new URL(db_url + "/show");
+	const url = new URL(db_url + "/posts/show");
 	url.searchParams.set("start", start);
 	url.searchParams.set("count", count);
 	return fetch(url, { method: "POST" })

@@ -30,6 +30,7 @@
 
 html {
 	box-sizing: border-box;
+	background-color: #363636;
 }
 
 * {
@@ -72,6 +73,10 @@ button {
 
 p {
 	margin: 0px;
+}
+
+.main {
+    margin-top: 80px;
 }
 
 .hidden-for-screen-reader {

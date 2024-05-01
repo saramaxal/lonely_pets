@@ -7,9 +7,9 @@
 
 .animal-card {
 	width: 280px;
-	padding-left: 8px;
-	padding-bottom: 8px;
-	padding-right: 8px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -40,7 +40,7 @@
 }
 
 .animal-card__wrap-photo {
-	width: 264px;
+	width: 100%;
 	height: 171px;
 	border-radius: 6px;
 	background-color: #363636;

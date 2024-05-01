@@ -1,4 +1,4 @@
-import { API_URL } from "./loadData";
+import { API_URL } from "./loadData.js";
 
 // Работа с формой
 let smile_array = ['👾', '👽', '👻', '🤖', '🐸', '🐻‍❄️'];
@@ -103,7 +103,9 @@ console.log("👻"[0] + "👽"[1]);
 // console.log(["🐸"[0]]);
 // console.log(["🐻‍❄️"[0]]);
 
-const form = document.getElementById("crate-form");
+
+
+const form = document.getElementById("create-form");
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -112,8 +114,9 @@ form.addEventListener('submit', async (event) => {
 
     try {
         const formData = new FormData(form);
+		console.log(formData);
         // employerError.textContent = "ОТПРАВКА. ПОДОЖДИТЕ...";
-        const response = await fetch(`${API_URL}/push`, {
+        const response = await fetch(`${API_URL}/posts/push`, {
             method: 'PUT',
             body: formData
         })
@@ -123,7 +126,9 @@ form.addEventListener('submit', async (event) => {
             // window.location.href = 'index.html';
 
         }
-        alert(response.ok);
+        // alert(response.ok);
+        console.log(response);
+        // console.log(response.error);
     } catch (error) {
         // employerError.textContent = "Не удалось отправить.";
         console.error(error);

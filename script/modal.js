@@ -12,10 +12,10 @@ const dataFormat = {
 	"size": val => { return val ? { large: "большой", middle: "средний", small: "маленький" }[val] : "" },
 }
 
-function getModalHtml(id, date, age, gender, size, contacts, address, description, imgSrc) {
+function getModalHtml(id, date, variety, age, gender, size, contacts, address, description, imgSrc) {
 	return `
 		<header class="header-modal">
-			<span class="type-animal">Собака</span>
+			<span class="type-animal">${variety}</span>
 			<div class="information-modal__wrap-id">
 				<span class="information-modal__header">№ объявления</span>
 				<span class="information-modal__data id-modal-data">${id}</span>
@@ -75,9 +75,11 @@ function cardClick() {
 	const cardData = this.querySelector("form");
 	const img = this.querySelector(".animal-card__photo");
 
+	console.log("size: " + cardData.size.value);
 	let html = getModalHtml(
 		cardData.id.value,
 		dataFormat.date(cardData.date.value),
+		cardData.variety.value,
 		cardData.age.value,
 		dataFormat.gender(cardData.gender.value),
 		dataFormat.size(cardData.size.value),

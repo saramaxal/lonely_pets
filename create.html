@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>lonely-pets</title>
 	<link rel="stylesheet" href="./normalize/normalize.css">
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="stylesheet" href="./style/main.css">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="./style/header.css">
 	<link rel="stylesheet" href="./style/form.css">
 	<link rel="stylesheet" href="./style/footer.css">
-	<script defer src="./script/create.js"></script>
+	<script defer type="module" src="./script/create.js"></script>
 	<script defer src="./script/load.js"></script>
 </head>
 
@@ -24,79 +24,81 @@
 			</span>
 		</div>
 	</header>
-	<div class="content main__content">
-		<form class="form" id="crate-form">
-			<div class="link-return">
-				<a href="./index.html" class="return"><- вернуться</a>
-			</div>
-			<!-- <div class="wrap-page"> -->
-			<div class="registration-add">
-				<p class="registration">Регистрация объявления</p>
-				<p class="ps">Расскажите о питомце, чтобы ему было проще найти дом.</p>
-			</div>
-			<div class="form-filling">
-				<div class="address-home">
-					<label for="address-home">адрес</label>
-					<input name="address-home" type="text" placeholder="адрес">
+	<main class="main">
+		<div class="content main__content">
+			<form class="form" id="create-form">
+				<div class="link-return">
+					<a href="./index.html" class="return"><- вернуться</a>
 				</div>
-				<div class="contacts">
-					<label for="contacts">контакты</label>
-					<input name="contacts" type="text" placeholder="телефон | telegram | whatsapp | почта | вконтакте">
+				<!-- <div class="wrap-page"> -->
+				<div class="registration-add">
+					<p class="registration">Регистрация объявления</p>
+					<p class="ps">Расскажите о питомце, чтобы ему было проще найти дом.</p>
 				</div>
-				<div class="description-animal">
-					<p>описание</p>
-					<textarea name="description-animal" type="text" placeholder="описание"></textarea>
-				</div>
-				<div class="animals">
-					<label for="animal">вид</label>
-					<select name="animal">
-						<option disabled="disabled" selected="selected">вид</option>
-						<option>кошка</option>
-						<option>собака</option>
-						<option>грызун</option>
-						<option>другое</option>
-					</select>
-				</div>
-				<div class="photo">
-					<label for="photo">фотография</label>
-					<p>прикрепить</p>
-					<input class="photo-input" type="file" name="image">
-
-				</div>
-				<div class="dimensions">
-					<label for="sizeng">размер (приблизительно)</label>
-					<select name="sizeng">
-						<option disabled="disabled" selected="selected">размер</option>
-						<option>мелкий</option>
-						<option>средний</option>
-						<option>крупный</option>
-					</select>
-				</div>
-				<div class="old">
-					<label for="older">возраст (приблизительно)</label>
-					<input class="older-from" name="older" type="text" placeholder="возраст">
-				</div>
-				<div class="gender-add">
-					<label for="language">пол</label>
-					<div class="man-add gender__item wrap-radio-button">
-						<input type="radio" class="radio-button" id="man-add" name="language">
-						<label for="man-add">м</label>
+				<div class="form-filling">
+					<div class="address-home">
+						<label for="address-home">адрес</label>
+						<input name="address" type="text" placeholder="адрес">
 					</div>
-					<div class="woman-add gender__item wrap-radio-button">
-						<input type="radio" class="radio-button" id="woman-add" name="language">
-						<label for="woman-add">ж</label>
+					<div class="contacts">
+						<label for="contacts">контакты</label>
+						<input name="contacts" type="text" placeholder="телефон | telegram | whatsapp | почта | вконтакте">
 					</div>
+					<div class="description-animal">
+						<p>описание</p>
+						<textarea name="description" type="text" placeholder="описание"></textarea>
+					</div>
+					<div class="animals">
+						<label for="variety">вид</label>
+						<select name="variety">
+							<option disabled="disabled" selected="selected">вид</option>
+							<option>кошка</option>
+							<option>собака</option>
+							<option>грызун</option>
+							<option>другое</option>
+						</select>
+					</div>
+					<div class="photo">
+						<label for="photo">фотография</label>
+						<p>прикрепить</p>
+						<input class="photo-input" type="file" name="image">
 
+					</div>
+					<div class="dimensions">
+						<label for="sizeng">размер (приблизительно)</label>
+						<select name="size">
+							<option disabled="disabled" selected="selected" value="">размер</option>
+							<option value="small">мелкий</option>
+							<option value="middle">средний</option>
+							<option value="large">крупный</option>
+						</select>
+					</div>
+					<div class="old">
+						<label for="older">возраст (приблизительно)</label>
+						<input class="older-from" name="age" type="text" placeholder="возраст">
+					</div>
+					<div class="gender-add">
+						<label for="gender">пол</label>
+						<div class="man-add gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="man-add" name="gender">
+							<label for="man-add">м</label>
+						</div>
+						<div class="woman-add gender__item wrap-radio-button">
+							<input type="radio" class="radio-button" id="woman-add" name="gender">
+							<label for="woman-add">ж</label>
+						</div>
+
+					</div>
+					<div class="button-send">
+						<button>оставить запрос</button>
+					</div>
 				</div>
-				<div class="button-send">
-					<button>оставить запрос</button>
-				</div>
-			</div>
-			<!-- </div> -->
+				<!-- </div> -->
 
 
-		</form>
-	</div>
+			</form>
+		</div>
+	</main>
 	<footer class="footer">
 		<div class="footer__content content">
 			<p class="footer__thank">Спасибо, что посетили сайт!</p>

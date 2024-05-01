@@ -61,6 +61,7 @@
 
 .photo-animal-modal {
 	min-width: 320px;
+	width: 320px;
 	height: 240px;
 	border-radius: 6px;
 	background-color: #363636;

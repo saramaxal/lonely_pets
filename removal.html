@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>lonely-pets</title>
 	<link rel="stylesheet" href="./normalize/normalize.css">
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="stylesheet" href="./style/main.css">
@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="./style/remove.css">
 	<link rel="stylesheet" href="./style/form.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<script defer type="module" src="./script/removal.js"></script>
 </head>
 
 <body>
@@ -22,38 +23,40 @@
 			</span>
 		</div>
 	</header>
-	<div class="content main__content">
-		<div class="link-return">
-			<a href="./index.html" class="return"><- вернуться</a>
+	<main class="main">
+		<div class="content main__content">
+			<div class="link-return">
+				<a href="./index.html" class="return"><- вернуться</a>
+			</div>
+			<div class="delete-remove">
+				<p class="delete">Удаление объявления</p>
+				<p class="ps-remove">Чтобы удалить объявление, мы должны убедиться, что питомец нашел свой дом. Заполните
+					форму, и объявление будет удалено.</p>
+			</div>
+			<form class="form-removal">
+				<div class="number-add">
+					<label for="id">номер объявления</label>
+					<input name="id" type="number" placeholder="номер объявления">
+				</div>
+				<div class="name-animal">
+					<label for="name-animal">имя питомца</label>
+					<input name="name-animal" type="text" placeholder="имя">
+				</div>
+				<div class="description-removal">
+					<label for="description-removal">расскажите, откуда у вас питомец и почему вы решили его
+						отдать (приобрести).</label>
+					<textarea name="description-removal" type="text" placeholder="описание"></textarea>
+				</div>
+				<div class="picture-animal">
+					<label for="photo">фотография</label>
+					<p>прикрепить</p>
+				</div>
+				<div class="button-removal">
+					<button>оставить запрос</button>
+				</div>
+			</form>
 		</div>
-		<div class="delete-remove">
-			<p class="delete">Удаление объявления</p>
-			<p class="ps-remove">Чтобы удалить объявление, мы должны убедиться, что питомец нашел свой дом. Заполните
-				форму, и объявление будет удалено.</p>
-		</div>
-		<div class="form-removal">
-			<div class="number-add">
-				<label for="number-add">номер объявления</label>
-				<input name="number-add" type="number" placeholder="номер объявления">
-			</div>
-			<div class="name-animal">
-				<label for="name-animal">имя питомца</label>
-				<input name="name-animal" type="text" placeholder="имя">
-			</div>
-			<div class="description-removal">
-				<label for="description-removal">расскажите, откуда у вас питомец и почему вы решили его
-					отдать (приобрести).</label>
-				<textarea name="description-removal" type="text" placeholder="описание"></textarea>
-			</div>
-			<div class="picture-animal">
-				<label for="photo">фотография</label>
-				<p>прикрепить</p>
-			</div>
-			<div class="button-removal">
-				<button>оставить запрос</button>
-			</div>
-		</div>
-	</div>
+	</main>
 	<footer class="footer">
 		<div class="footer__content content">
 			<p class="footer__thank">Спасибо, что посетили сайт!</p>
