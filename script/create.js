@@ -1,4 +1,5 @@
 import { API_URL } from "./loadData.js";
+import { noticeProcessSubmit, noticeSuccessSubmit } from "./notice.js";
 
 // Работа с формой
 let smile_array = ['👾', '👽', '👻', '🤖', '🐸', '🐻‍❄️'];
@@ -106,9 +107,12 @@ console.log("👻"[0] + "👽"[1]);
 
 
 const form = document.getElementById("create-form");
+const buttonSubmit = document.querySelector(".button-send button");
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
+	noticeProcessSubmit();
+	buttonSubmit.disabled = true;
     // const employerError = document.querySelector(".employer__error");
     // if (!validate.isValid) return;
 
@@ -128,10 +132,14 @@ form.addEventListener('submit', async (event) => {
         }
         // alert(response.ok);
         console.log(response);
+		form.reset();
+		noticeSuccessSubmit();
         // console.log(response.error);
     } catch (error) {
         // employerError.textContent = "Не удалось отправить.";
         console.error(error);
     }
 
-})
+	buttonSubmit.disabled = false;
+
+});

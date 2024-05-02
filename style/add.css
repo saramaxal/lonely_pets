@@ -105,22 +105,6 @@ body {
     padding-left: 24px;
 }
 
-.photo {
-    display: inline-block;
-    grid-area: photo;
-}
-
-.photo p {
-    border: 2px solid #363636;
-    width: 100%;
-    height: 286px;
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-}
-
 .dimensions {
     grid-area: dimensions;
 }
@@ -177,20 +161,32 @@ body {
 }
 
 .button-send {
+	position: relative;
     grid-area: button-send;
+	width: max-content;
 }
 
 .button-send button {
     width: 216px;
     height: 55px;
     border-radius: 4px;
-    background-color: #363636;
+}
+
+.button-send button:not(:disabled) {
+	background-color: #363636;
     color: #C5C5C5;
     cursor: pointer;
 }
 
-.button-send button:hover {
+.button-send button:hover:not(:disabled) {
     background-color: #C5C5C5;
     color: #363636;
     transition: 0.3s;
+}
+
+.button-send button:disabled{
+	background-color: #BBBBBB;
+    color: #363636;
+	cursor: auto;
+	outline: 2px solid #363636;
 }

@@ -1,4 +1,5 @@
 import { API_URL } from "./loadData.js";
+import { noticeProcessSubmit, noticeSuccessSubmit } from "./notice.js";
 
 const formRemoval = document.querySelector(".form-removal");
 const buttonRemoval = document.querySelector(".button-removal");
@@ -23,7 +24,7 @@ const buttonRemoval = document.querySelector(".button-removal");
 
 formRemoval.addEventListener('submit', async (event) => {
 	event.preventDefault();
-
+	noticeProcessSubmit();
     try {
         // const formData = new FormData(formRemoval);
 		// formData.forEach((val, key, par) => console.log(key + ": " + val));
@@ -42,6 +43,8 @@ formRemoval.addEventListener('submit', async (event) => {
         }
         // alert(response.ok);
         console.log(await response.json());
+		formRemoval.reset();
+		noticeSuccessSubmit();
     } catch (error) {
         console.error(error);
     }

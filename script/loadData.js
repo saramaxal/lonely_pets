@@ -47,11 +47,12 @@ function recreateData(data) {
 				<div class="animal-card__description unselectable">
 					${post.description}
 				</div>
-				<div class="animal-card__wrap-photo">
-					<img class="animal-card__photo" src="${db_url}/${post.image}">
+				<div class="animal-card__wrap-photo hidden-for-screen-reader">
+					<img class="animal-card__photo" onload="this.parentElement.classList.remove('hidden-for-screen-reader')" src="${db_url}/${post.image}">
 				</div>
 			</div>`;
 		}
+		
 		animalsCards.innerHTML = htmlContent;
 	}
 }

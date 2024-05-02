@@ -21,16 +21,10 @@
 .form-removal {
     font-family: "Ubuntu";
     font-size: 20px;
-    display: grid;
+    display: flex;
+	flex-direction: column;
     row-gap: 18px;
-
-    grid-template-columns: 762px;
-    grid-template-areas:
-        "number-add"
-        "name-animal"
-        "description-removal"
-        "picture-animal"
-        "button-removal";
+	width: 762px;
 }
 
 .number-add {
@@ -48,7 +42,6 @@
 }
 
 .name-animal {
-    grid-area: name-animal;
 }
 
 .name-animal input {
@@ -62,7 +55,7 @@
 }
 
 .description-removal {
-    grid-area: description-removal;
+
 }
 
 .description-removal textarea {
@@ -79,7 +72,6 @@
 
 .picture-animal {
     display: inline-block;
-    grid-area: picture-animal;
 }
 
 .picture-animal p {
@@ -94,6 +86,8 @@
 }
 
 .button-removal {
+	position: relative;
+	width: max-content;
     grid-area: button-removal;
 }
 

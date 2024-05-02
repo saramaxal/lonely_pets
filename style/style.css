@@ -38,6 +38,11 @@ html {
 	/* outline: solid red; */
 }
 
+*::selection{
+	background-color: #605E9B;
+	color: #FFFFFE;
+}
+
 body {
 	font-size: 24px;
 	font-family: Lora, sans-serif;

@@ -12,7 +12,10 @@
 	<link rel="stylesheet" href="./style/remove.css">
 	<link rel="stylesheet" href="./style/form.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/notice.css">
+	<link rel="stylesheet" href="./style/load_photo.css">
 	<script defer type="module" src="./script/removal.js"></script>
+	<script defer src="./script/load_photo.js"></script>
 </head>
 
 <body>
@@ -47,12 +50,21 @@
 						отдать (приобрести).</label>
 					<textarea name="description-removal" type="text" placeholder="описание"></textarea>
 				</div>
-				<div class="picture-animal">
-					<label for="photo">фотография</label>
-					<p>прикрепить</p>
+				<div class="load-photo">
+					<label>фотография</label>
+					<div class="photo__wrap-photo">
+						<img class="photo-preview">
+						<svg width="398" height="286" viewBox="0 0 398 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="398" height="286" fill="white" fill-opacity="0.45"/>
+							<rect class="plus" x="181" y="141" width="36" height="4" rx="2" fill="#363636"/>
+							<rect class="plus" x="197" y="161" width="36" height="4" rx="2" transform="rotate(-90 197 161)" fill="#363636"/>
+						</svg>
+						<input class="photo-input hidden-for-screen-reader" type="file" name="image">
+					</div>
 				</div>
 				<div class="button-removal">
 					<button>оставить запрос</button>
+					<div class="wrap-notice"></div>
 				</div>
 			</form>
 		</div>
